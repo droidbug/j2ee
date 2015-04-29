@@ -2,6 +2,7 @@ package com.sn.services;
 
 import java.sql.Connection;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletContext;
@@ -36,6 +37,20 @@ public class NoteService {
 		noteList.add((Note)new Object());
 		noteList.add((Note)new Object());
 
+		return noteList;
+	}
+	
+	public List<Note> findAllNoteDemo(){
+		for(long i=1;i<=10;i++) {
+			Note note = new Note();
+			note.setId(i);
+			note.setTitle("title-"+i);
+			note.setDescription("Description-"+(i+i));
+			note.setLastUpdateAt(new Date());
+			noteList.add(note);
+		}
+		//System.out.println("noteList.size() = "+noteList.size());
+		//System.out.println(noteList.toString());
 		return noteList;
 	}
 	

@@ -15,7 +15,9 @@ public class Note implements Serializable {
 	private Date lastUpdateAt;
 	private boolean isDeleted;
 	
-	
+	public Note(){
+		
+	}
 	
 	public Note(long id, String title, String description, String importance,
 			long creator, Date lastUpdateAt, boolean isDeleted) {
