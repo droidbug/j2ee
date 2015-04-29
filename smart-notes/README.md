@@ -7,11 +7,12 @@
     - Ajax.
     - REST api (Link).
     - http://localhost:8080/smart-notes/rest/note
-    /*
+    ```javascript
         Hello noteTest()
-    */
+    ```
+    
     - http://localhost:8080/smart-notes/rest/note/noteTest
-    /*
+    ```javascript
     {
         "id": 1,
         "description": null,
@@ -21,9 +22,10 @@
         "importance": null,
         "creator": 0
     }
-    */
+    ```
+    
     - http://localhost:8080/smart-notes/rest/note/all
-    /*
+    ```javascript
     [
         {
             "id": 1,
@@ -53,4 +55,5 @@
             "creator": 0
         }
     ]
-    */
+    ```
+    
