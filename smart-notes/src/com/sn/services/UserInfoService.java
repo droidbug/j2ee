@@ -12,7 +12,6 @@ import javax.servlet.ServletException;
 
 import org.apache.log4j.Logger;
 
-import com.sn.models.Note;
 import com.sn.models.UserInfo;
 
 public class UserInfoService {
@@ -64,8 +63,10 @@ public class UserInfoService {
 							rs.getTimestamp("create_date"));
 					logger.info("UserInfo found with details=" + userInfo);
 				} else {
-					logger.info("UserInfo result set is empty.");
+					logger.info("UserInfo rs is empty.");
 				}
+			} else {
+				logger.info("UserInfo rs is null.");
 			}
 			return userInfo;
 		} catch (SQLException e) {
